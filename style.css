@@ -1,1 +1,47 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
 
+  box-sizing: border-box;
+
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Test container layout borders */
+
+.border-violet {
+  margin: 50px;
+  padding: 10px;
+  border: 1px dotted blueviolet;
+}
+
+.border-green > * {
+  border: 1px dotted green;
+}
+
+.border-red > * {
+  border: 1px dotted red;
+}
+
+/* Grids */
+
+.two-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.three-row-grid__space-two {
+  display: grid;
+  grid-template-rows: 400px 1fr 70px;
+}
+
+.two-col-grid__expand-one {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 10px;
+}
