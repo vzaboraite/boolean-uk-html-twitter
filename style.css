@@ -60,7 +60,7 @@ a {
 
 .two-col-grid__expand-one {
   display: grid;
-  grid-template-columns: 1fr 200px;
+  grid-template-columns: 1fr auto;
   gap: 10px;
 }
 
@@ -85,7 +85,23 @@ a {
 
 .two-row-grid {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.grid-col-auto {
+  display: grid;
+  grid-auto-flow: column;
+
+  gap: 10px;
+}
+
+.grid-auto-row {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.place-content__center {
+  place-content: start;
 }
 
 /* general */
@@ -95,8 +111,40 @@ li {
 }
 
 .aside-header,
-.navigation {
+.navigation,
+.main-content-header {
   border-bottom: 2px solid black;
 
   margin-bottom: 10px;
+}
+
+.row-wrapper {
+  border: 1px solid darkmagenta;
+  padding: 10px;
+}
+
+.content-wrapper {
+  border: 1px dotted magenta;
+  padding: 10px;
+}
+
+.main-content-header {
+  padding: 10px;
+}
+
+.main-content-header .navigation-name {
+  height: 50px;
+}
+
+.main-content .create-tweet {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.main-content .create-tweet textarea {
+  margin-bottom: 10px;
+}
+
+.aside-footer {
+  height: 70px;
 }
