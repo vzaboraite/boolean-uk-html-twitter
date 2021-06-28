@@ -12,6 +12,14 @@ body {
   min-height: 100vh;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Test container layout borders */
 
 .border-violet {
@@ -22,26 +30,73 @@ body {
 
 .border-green > * {
   border: 1px dotted green;
+  padding: 10px;
+  margin: 10px;
 }
 
 .border-red > * {
   border: 1px dotted red;
 }
 
+/* Logo, Icons, avatar */
+
+.logo,
+.icon {
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid lightblue;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+
+  border: 1px solid palevioletred;
+  border-radius: 50%;
+}
+
 /* Grids */
-
-.two-col-grid__expand-two {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-}
-
-.three-row-grid__space-two {
-  display: grid;
-  grid-template-rows: 400px 1fr 70px;
-}
 
 .two-col-grid__expand-one {
   display: grid;
   grid-template-columns: 1fr 200px;
   gap: 10px;
+}
+
+.two-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  gap: 10px;
+}
+
+.three-col-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+
+  gap: 10px;
+}
+
+.three-row-grid__space-two {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.two-row-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+/* general */
+
+li {
+  margin-bottom: 5px;
+}
+
+.aside-header,
+.navigation {
+  border-bottom: 2px solid black;
+
+  margin-bottom: 10px;
 }
