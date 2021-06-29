@@ -10,6 +10,8 @@
 
 body {
   min-height: 100vh;
+
+  color: black;
 }
 
 ul {
@@ -18,6 +20,8 @@ ul {
 
 a {
   text-decoration: none;
+
+  color: inherit;
 }
 
 /* Refactoring styles */
@@ -31,40 +35,23 @@ a {
   padding-right: 1rem;
 }
 
-/* Test container layout borders */
-
-.border-green > * {
-  border: 1px dotted green;
-  padding: 10px;
-  margin: 10px;
-}
-
-.border-red > * {
-  border: 1px dotted red;
-}
-
 /* Logo, Icons, avatar */
-
-.icon {
-  width: 30px;
-  height: 30px;
-
-  border: 1px solid lightblue;
-}
 
 .avatar {
   width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 img {
   width: 100%;
   object-fit: cover;
-  border-radius: 50%;
 }
 
 svg {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .img {
@@ -74,6 +61,17 @@ svg {
   border-radius: 5px;
 }
 
+.img-lg {
+  width: auto;
+  margin: 10px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.img-lg img {
+  width: 100%;
+  object-fit: cover;
+}
 /* Grids */
 
 .two-col-grid {
@@ -145,24 +143,34 @@ li {
   margin-bottom: 5px;
 }
 
-.main-header,
-.main-aside .news-header {
-  border-bottom: 2px solid black;
+.action-button button {
+  width: 200px;
+  padding: 10px;
 
-  margin-bottom: 10px;
+  border: none;
+  border-radius: 50px;
+
+  background-color: lightskyblue;
+
+  color: white;
+  font-weight: 900;
+  font-size: 16px;
 }
 
 .profile {
   height: 70px;
 }
 
-.row-wrapper {
-  border: 1px solid darkmagenta;
-  padding: 10px;
+.side-borders {
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
 }
 
 .main-header {
+  border-bottom: 1px solid lightgray;
+
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .main-header .navigation-name {
@@ -172,6 +180,8 @@ li {
 .main-content .compose-tweet {
   margin-bottom: 20px;
   padding: 10px;
+
+  border-bottom: 3px solid lightgray;
 }
 
 .main-content textarea {
@@ -185,19 +195,43 @@ li {
 }
 
 .action-buttons .options {
-  justify-content: start;
+  place-content: start;
   gap: 1.5rem;
+}
+
+.main-header .icon,
+.action-buttons .options .icon {
+  fill: rgb(29, 161, 242);
 }
 
 .action-buttons button {
   width: 100px;
-
   margin: 0 10px 10px;
-  padding: 5px;
-
+  padding: 10px;
   justify-self: end;
-
   border-radius: 30px;
+  background-color: rgb(29, 161, 242);
+  color: white;
+  font-weight: 900;
+}
+
+.tweet {
+  padding: 10px;
+
+  border-bottom: 1px solid lightgray;
+}
+
+.content-wrapper > * {
+  margin-bottom: 15px;
+}
+
+.content-wrapper .user-info .name {
+  font-weight: 900;
+}
+
+.content-wrapper .user-info .username,
+.content-wrapper .user-info .time {
+  color: grey;
 }
 
 .main-aside .news-header {
