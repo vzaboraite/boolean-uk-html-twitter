@@ -53,12 +53,12 @@ a {
 }
 
 .avatar {
-  min-width: 100%;
-  object-fit: cover;
+  width: 40px;
 }
 
 img {
-  width: 50px;
+  width: 100%;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -145,7 +145,7 @@ li {
   margin-bottom: 5px;
 }
 
-.main-content-header,
+.main-header,
 .main-aside .news-header {
   border-bottom: 2px solid black;
 
@@ -161,11 +161,11 @@ li {
   padding: 10px;
 }
 
-.main-content-header {
+.main-header {
   padding: 10px;
 }
 
-.main-content-header .navigation-name {
+.main-header .navigation-name {
   height: 50px;
 }
 
