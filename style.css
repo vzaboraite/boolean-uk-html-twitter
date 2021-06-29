@@ -45,7 +45,6 @@ a {
 
 /* Logo, Icons, avatar */
 
-.logo,
 .icon {
   width: 30px;
   height: 30px;
@@ -61,6 +60,11 @@ a {
 img {
   width: 50px;
   border-radius: 50%;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
 }
 
 .img {
