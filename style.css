@@ -8,6 +8,10 @@
   font-family: sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
 
@@ -139,8 +143,11 @@ li {
   margin-bottom: 5px;
 }
 
-aside {
+.left-sidebar {
   height: 100vh;
+
+  position: sticky;
+  top: 0;
 }
 
 .navigation {
