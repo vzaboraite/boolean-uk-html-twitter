@@ -287,33 +287,56 @@ li {
   border: none;
   border-radius: 30px;
 
-  background-color: rgba(224, 224, 224, 0.397);
+  background-color: #f7f9f9;
 
   font-size: 16px;
 }
 
 .explore-section {
-  padding: 10px;
-  margin: 5px;
+  margin-bottom: 1rem;
+  background-color: #f7f9f9;
 
-  background-color: rgba(224, 224, 224, 0.397);
-
-  border-radius: 10px;
+  border-radius: 16px;
 }
 
-.explore-section .sidebar-list > * {
-  margin-bottom: 5px;
-}
-
-.explore-section .sidebar-list {
-  padding: 5px;
-  margin-bottom: 10px;
+.explore-section .sidebar-list a {
+  margin-bottom: 0.5rem;
 }
 
 .explore-section .sidebar-list .section-card {
   border-bottom: 1px solid rgba(211, 211, 211, 0.534);
 }
 
-.explore-section .section-title {
-  border-bottom: 2px solid rgba(211, 211, 211, 0.534);
+.explore-section .section-header {
+  padding: 10px;
+  margin-bottom: 0.825rem;
+
+  border-bottom: 1px solid rgba(211, 211, 211, 0.534);
+}
+
+.explore-section .section-header .section-title {
+  font-size: 1.25rem;
+}
+
+.explore-section .section-card {
+  padding: 0.825rem;
+}
+
+.explore-section .section-card .text-column h3 {
+  font-size: 1rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.explore-section .section-card .text-column p {
+  font-size: 0.875rem;
+  color: grey;
+
+  margin-bottom: 0.25rem;
+}
+
+.explore-section .last-section-line {
+  padding: 1rem;
+
+  color: rgb(29, 161, 242);
 }
