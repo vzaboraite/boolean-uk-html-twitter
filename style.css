@@ -271,12 +271,16 @@ li {
   color: grey;
 }
 
-.news-header {
+.right-sidebar-header {
   height: 70px;
   padding: 10px;
+
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 
-.news-header input {
+.right-sidebar-header input {
   width: 100%;
   padding: 16px;
 
