@@ -139,6 +139,29 @@ li {
   margin-bottom: 5px;
 }
 
+aside {
+  height: 100vh;
+}
+
+.navigation {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.navigation nav {
+  margin-left: 20px;
+}
+
+.navigation svg {
+  width: 30px;
+  height: 30px;
+}
+
+.navigation .logo,
+.navigation a {
+  padding: 10px 0;
+}
+
 .action-button button {
   width: 200px;
   padding: 10px;
@@ -146,7 +169,7 @@ li {
   border: none;
   border-radius: 50px;
 
-  background-color: lightskyblue;
+  background-color: rgb(29, 161, 242);
 
   color: white;
   font-weight: 900;
@@ -212,7 +235,7 @@ li {
   border: none;
   border-radius: 30px;
 
-  background-color: rgb(29, 161, 242);
+  background-color: lightskyblue;
 
   color: white;
   font-weight: 900;
