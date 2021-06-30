@@ -133,8 +133,14 @@ svg {
   grid-auto-flow: row;
 }
 
-.place-content__center {
-  place-content: start;
+.align-items__center {
+  display: grid;
+  align-items: center;
+}
+
+.justify-content__start {
+  display: grid;
+  justify-content: start;
 }
 
 /* general */
@@ -145,6 +151,7 @@ li {
 
 .left-sidebar {
   height: 100vh;
+  width: 100%;
 
   position: sticky;
   top: 0;
@@ -164,9 +171,29 @@ li {
   height: 30px;
 }
 
-.navigation .logo,
-.navigation a {
-  padding: 10px 0;
+.navigation .logo {
+  width: 40px;
+  height: 40px;
+
+  padding: 10px;
+
+  border-radius: 50%;
+}
+
+.navigation .nav-items {
+  border-radius: 30px;
+  padding: 8px 20px;
+}
+
+.navigation a:hover .nav-items {
+  background-color: lightblue;
+  color: blue;
+  fill: blue;
+}
+
+.navigation a .nav-items:visited {
+  color: blue;
+  fill: blue;
 }
 
 .action-button button {
@@ -181,6 +208,11 @@ li {
   color: white;
   font-weight: 900;
   font-size: 16px;
+}
+
+.action-button button:hover {
+  background-color: rgb(23, 137, 207);
+  cursor: pointer;
 }
 
 .profile {
